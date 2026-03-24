@@ -1,0 +1,37 @@
+$light-colors:(
+
+    /*====Color base====*/
+        primary:            #1581fd,
+        secondary:          #a5a5a5,
+        danger:             #cc134b,
+        success:            #13b657,
+        warning:            #e0e41d,
+        info:               #11a8ad,
+
+    /*====Body surface color====*/
+        surface:            #ffffff,
+
+    /*====Text color ==== */
+        text-primary:       #000,
+        text-secondary:     #666
+
+);
+
+
+$dark-colors:(
+    /*====Color base====*/
+        primary:            #1581fd,
+        secondary:          #a5a5a5,
+        danger:             #cc134b,
+        success:            #13b657,
+        warning:            #e0e41d,
+        info:               #11a8ad,
+
+    /*====Body surface color====*/
+        surface:            #0a0a0ad5,
+
+    /*====Text color ==== */
+        text-primary :      #ededed,
+        text-seconday:      #adadad
+
+);

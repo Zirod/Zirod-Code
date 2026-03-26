@@ -1,0 +1,23 @@
+$light-theme-colors : (
+    /* ------- Base color -------*/
+    primary : rgba(12, 117, 255, 0.815),
+    success : rgb(7, 206, 113),
+    info    : rgb(6, 225, 233),
+    danger  : rgb(206, 6, 66),
+
+    /* ------- Surface color -------*/
+    body-bg    : rgba(247, 239, 239, 0.788),
+    text-color : rgba(29, 29, 29, 0.89)
+);
+
+$dark-theme-colors :(
+    /* ------- Base color -------*/
+    primary : rgba(12, 117, 255, 0.815),
+    success : rgb(7, 206, 113),
+    info    : rgb(6, 225, 233),
+    danger  : rgb(206, 6, 66),
+
+    /* ------- Surface color -------*/
+    body-bg    : rgba(32, 32, 32, 0.788),
+    text-color : rgba(233, 225, 225, 0.89)
+);

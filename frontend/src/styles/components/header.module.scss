@@ -19,9 +19,9 @@
     display: flex;
     border-radius: 100px;
     justify-content: space-between;
-    background-color: theme(semi-transparent);
-    backdrop-filter: blur(20px);
-
+    background-color: #ffffff42;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
     .logo{
         

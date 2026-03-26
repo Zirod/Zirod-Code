@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Hero } from "./components/Hero.section";
 import { Header } from "./components/header";
-import "../../styles/main.scss";
+import "../styles/main.scss";
 
 
 export const metadata: Metadata = {
@@ -15,8 +14,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
         <html lang="en" data-theme="dark">
             <body>
                 <Header />
-   
-                <main>{children}</main>
+                {children}
             </body>
         </html>
 

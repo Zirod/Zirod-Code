@@ -3,7 +3,7 @@ import "../../styles/main.scss";
 
 
 export const metadata: Metadata = {
-  title: "% | Zirod Code",
+  title: "Zirod Code | Portforlio",
   description: "Portfolio développeur Node.js / Next.js",
 };
 
@@ -12,9 +12,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode; }
 
     <html lang="en" data-theme="dark">
         <body>
-            <main>
-            {children}
-            </main>
+            <main>{children}</main>
         </body>
     </html>
 

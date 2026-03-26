@@ -3,27 +3,39 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* HTML et Body */
 html, body {
-  min-height: 100vh;
-  width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  background: theme(body-bg);
-  color: theme(text-color);
-  scroll-behavior: smooth;
+    min-height: 100vh;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    background-image: url('../public/1774434686.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: theme(text-color);
+    scroll-behavior: smooth;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    background: theme(body-bg);
+    pointer-events:none;
+    backdrop-filter: blur(30px);
 }
 
 main{
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
     height: 100%;
 }

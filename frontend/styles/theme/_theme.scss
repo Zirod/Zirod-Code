@@ -2,14 +2,14 @@
 
 /* Mixin pour générer les variables CSS depuis une map */
 @mixin generate-color-by-theme($map) {
-  @each $key, $value in $map {
-    --#{$key}: #{$value};
-  }
+    @each $key, $value in $map {
+        --#{$key}: #{$value};
+    }
 }
 
 /* Génération des variables CSS pour chaque thème */
 :root {
-  @include generate-color-by-theme($light-theme-colors);
+    @include generate-color-by-theme($light-theme-colors);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,5 +20,5 @@
 
 
 @function theme($key) {
-  @return var(--#{$key});
+    @return var(--#{$key});
 }

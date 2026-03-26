@@ -1,0 +1,59 @@
+@use '../tokens/index' as *;
+@use '../theme/theme' as *;
+
+.header{
+    position: fixed;
+    top:0;right:0;left:0;
+    z-index: 999;
+    padding-top: space(sm);
+    width: 100%;
+    height:auto;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+}
+
+.container{
+    width: 60%;
+    padding: space(sm) space(2xl);
+    display: flex;
+    border-radius: 100px;
+    justify-content: space-between;
+    background-color: theme(semi-transparent);
+    backdrop-filter: blur(20px);
+
+
+    .logo{
+        
+        font-size: fs(2xl);
+        font-weight: fw(bold);
+        border-radius: 5px;
+    }
+
+}
+
+.nav {
+
+    padding: space(sm) space(sm);
+
+    .nav_links {
+        display: flex;
+        gap: space(md);
+        list-style: none;
+        
+        .nav_item {
+            position: relative;
+            padding: space(md);
+            font-size: fs(md);
+            font-weight: fw(medium);
+            text-decoration: none;
+            color: theme(danger);
+            transition: color 0.2s ease;
+
+            &:hover {
+            color: #0070f3;
+            }
+
+        }
+    }
+}

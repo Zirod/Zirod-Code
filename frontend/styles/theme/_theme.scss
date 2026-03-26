@@ -5,6 +5,7 @@
     @each $key, $value in $map {
         --#{$key}: #{$value};
     }
+
 }
 
 /* Génération des variables CSS pour chaque thème */

@@ -7,8 +7,15 @@ $light-theme-colors : (
 
     /* ------- Surface color -------*/
     body-bg    : rgba(253, 253, 253, 0.747),
-    text-color : rgb(56, 56, 56)
+    semi-transparent: rgba(192, 191, 191, 0.308),
+    hero-surface:rgba(141, 231, 247, 0.651),
+
+    /* ------- Text color -------*/
+    text-color : rgb(56, 56, 56),
+
+
 );
+
 
 $dark-theme-colors :(
     /* ------- Base color -------*/
@@ -19,5 +26,11 @@ $dark-theme-colors :(
 
     /* ------- Surface color -------*/
     body-bg    : rgba(46, 46, 46, 0.747),
-    text-color : rgb(255, 255, 255)
+    semi-transparent: rgba(128, 128, 128, 0.589),
+
+
+    /* ------- Text color -------*/
+    text-color : rgb(255, 255, 255),
+
+
 );

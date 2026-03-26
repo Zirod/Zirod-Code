@@ -1,0 +1,51 @@
+// Font sizes
+$font-sizes: (
+  xs: 0.75rem,
+  sm: 0.875rem, 
+  md: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem, 
+  2xl: 1.5rem, 
+  3xl: 1.875rem,
+  4xl: 2.25rem, 
+  5xl: 3rem
+);
+@function fs($key) {
+  @return map-get($font-sizes, $key);
+}
+
+// Font weights
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800
+);
+
+@function fw($key) {
+  @return map-get($font-weights, $key);
+}
+
+// Line heights
+$line-heights: (
+  tight: 1.2,
+  normal: 1.5,
+  relaxed: 1.75
+);
+
+@function lh($key) {
+  @return map-get($line-heights, $key);
+}
+
+// Letter spacing
+$letter-spacing: (
+  tight: -0.01em,
+  normal: 0,
+  wide: 0.05em
+);
+
+@function ls($key) {
+  @return map-get($letter-spacing, $key);
+}

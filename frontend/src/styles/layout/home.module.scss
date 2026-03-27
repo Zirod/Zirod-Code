@@ -1,0 +1,6 @@
+@use '../minxing/index.scss' as *;
+
+
+.container{
+    @include grid-auto(300px, 1fr, auto-fit, 20px);
+}

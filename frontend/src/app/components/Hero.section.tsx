@@ -1,5 +1,7 @@
 import styles from '@/styles/components/hero.module.scss';
 
 export function Hero() {
-  return <section className={styles.container}>Hero Section</section>;
+  return <section className={styles.container}>
+    
+  </section>;
 }

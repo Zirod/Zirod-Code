@@ -1,0 +1,58 @@
+@use '../tokens/index.scss' as *;
+@use '../theme/theme.scss' as *;
+@use '../minxing/index.scss' as *;
+
+.button {
+  @include flex;
+  min-width: 130px;
+  max-width: fit-content;
+  gap: space(sm);
+  padding: space(sm) space(lg);
+  border: none;
+  border-radius: 8px;
+  font-weight: fw(medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  .icon {
+    @include flex;
+  }
+}
+
+/* Variants */
+
+.success {
+  background-color: theme(success);
+  color: white;
+
+  &:hover {
+    @include hovered(theme(success));
+  }
+}
+
+.danger {
+  background-color: theme(danger);
+  color: white;
+
+  &:hover {
+    @include hovered(theme(danger));
+  }
+}
+
+.primary {
+  background-color: theme(primary);
+  color: white;
+
+  &:hover {
+    @include hovered(theme(primary));
+  }
+}
+
+.secondary {
+  background-color: theme(secondary);
+  color: white;
+
+  &:hover {
+    @include hovered(theme(secondary));
+  }
+}

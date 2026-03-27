@@ -1,15 +1,15 @@
 @use '../tokens/colors.scss' as *;
 @use '../theme/theme.scss' as *;
+@use '../minxing/index.scss' as *;
 
 
 
 .container{
+    @include flex;
     position: relative;
     width:100%;
     height: 100vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;    
+       
     background-image: url('../../../public/1774434686.png');
     background-size: cover;
 
@@ -19,7 +19,6 @@
         top:0;right:0;left:0;bottom:0;
         background-color: theme(hero-surface);
         backdrop-filter: blur(30px);
-
     }
     
 }

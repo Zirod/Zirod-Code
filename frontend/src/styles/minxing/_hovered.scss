@@ -1,0 +1,9 @@
+
+@mixin hovered($var, $percent: 10%) {
+  background-color: $var;
+
+  &:hover {
+    background-color: $var;
+    filter: brightness(calc(100% - #{$percent}));
+  }
+}

@@ -1,9 +1,11 @@
 $light-theme-colors : (
     /* ------- Base color -------*/
-    primary : rgba(12, 117, 255, 0.815),
-    success : rgb(7, 206, 113),
-    info    : rgb(6, 225, 233),
-    danger  : rgb(206, 6, 66),
+    primary     : rgba(3, 98, 223, 0.815),
+    success     : rgb(4, 170, 120),
+    info        : rgb(6, 225, 233),
+    danger      : rgb(206, 6, 66),
+    warning     : rgb(245, 225, 50),
+    secondary   : rgb(114, 114, 114),
 
     /* ------- Surface color -------*/
     body-bg    : rgba(253, 253, 253, 0.747),
@@ -26,7 +28,8 @@ $dark-theme-colors :(
 
     /* ------- Surface color -------*/
     body-bg    : rgba(46, 46, 46, 0.747),
-    semi-transparent: rgba(94, 95, 95, 0.301),
+    semi-transparent: rgba(0, 0, 0, 0.425),
+    hero-surface:rgba(0, 0, 0, 0.527),
 
 
     /* ------- Text color -------*/

@@ -9,7 +9,7 @@
   gap: space(sm);
   padding: space(sm) space(lg);
   border: none;
-  border-radius: 8px;
+  border-radius: 50px;
   font-weight: fw(medium);
   cursor: pointer;
   transition: all 0.2s ease;
@@ -26,7 +26,7 @@
   color: white;
 
   &:hover {
-    @include hovered(theme(success));
+    @include button-hover(theme(success));
   }
 }
 
@@ -35,7 +35,7 @@
   color: white;
 
   &:hover {
-    @include hovered(theme(danger));
+    @include button-hover(theme(danger));
   }
 }
 
@@ -44,7 +44,7 @@
   color: white;
 
   &:hover {
-    @include hovered(theme(primary));
+    @include button-hover(theme(primary));
   }
 }
 
@@ -53,6 +53,15 @@
   color: white;
 
   &:hover {
-    @include hovered(theme(secondary));
+    @include button-hover(theme(secondary));
+  }
+}
+
+.warning {
+  background-color: theme(warning);
+  color: white;
+
+  &:hover {
+    @include button-hover(theme(warning));
   }
 }

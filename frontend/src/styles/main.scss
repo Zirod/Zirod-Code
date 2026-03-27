@@ -31,7 +31,7 @@ body::before{
     z-index: 0;
     background: theme(body-bg);
     pointer-events:none;
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
 }
 
 main{

@@ -1,0 +1,10 @@
+@use '../theme/theme.scss' as *;
+
+$border :(
+    sm : 1px solid theme(border),
+    md : 2px solid theme(border),
+    lg : 4px solid theme(border),
+    xl : 8px solid theme(border),
+    2xl : 16px solid theme(border),
+    3xl : 32px solid theme(border)
+);

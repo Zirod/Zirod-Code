@@ -1,9 +1,22 @@
+@use '../theme/theme.scss' as *;
 
-@mixin hovered($var, $percent: 10%) {
-  background-color: $var;
-
-  &:hover {
+@mixin button-hover($var, $percent: 10%) {
     background-color: $var;
-    filter: brightness(calc(100% - #{$percent}));
-  }
+
+    &:hover {
+        background-color: $var;
+        filter: brightness(calc(100% - #{$percent}));
+        box-shadow: theme(elevation-1);
+    }
+}
+
+
+@mixin card-hover( $scale: 1.03, $duration: 0.3s, $timing: ease-in-out,  ) {
+    
+    transition: transform $duration $timing, box-shadow $duration $timing;
+
+    &:hover {
+        transform: scale($scale);
+        box-shadow: theme(elevation-4);
+    }
 }

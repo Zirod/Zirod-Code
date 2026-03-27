@@ -1,6 +1,9 @@
+/*
+    @mixig de création des gid system pour une organisation des layout ou contanaire
+*/
 
 @mixin grid-auto($min: 200px, $max: 1fr, $mode: auto-fit, $gap: 1rem) {
-  display: grid;
-  grid-template-columns: repeat(#{$mode}, minmax(#{$min}, #{$max}));
-  gap: $gap;
+    display: grid;
+    grid-template-columns: repeat(#{$mode}, minmax(#{$min}, #{$max}));
+    gap: $gap;
 }

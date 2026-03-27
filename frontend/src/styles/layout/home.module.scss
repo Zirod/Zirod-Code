@@ -2,5 +2,6 @@
 
 
 .container{
-    @include grid-auto(300px, 1fr, auto-fit, 20px);
+    padding: space(lg);
+    @include grid-auto(270px, 1fr, auto-fill, 20px);
 }

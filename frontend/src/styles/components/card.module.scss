@@ -1,0 +1,45 @@
+@use '../theme/theme.scss' as *;
+@use '../tokens/index.scss' as *;
+@use '../minxing/index.scss' as *;
+
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+  border-radius:radius(2xl) radius(2xl) 0 0;
+}
+
+.card{
+    background: theme(semi-transparent);
+    border-radius: radius(2xl);
+    border: border(sm);
+    box-shadow: theme(elevation-5);
+    transition: all 0.2s ease;
+    backdrop-filter: blur(100px);
+    
+    cursor: pointer;
+
+    .cardContent{
+        padding: space(md);
+        display: flex;
+        flex-direction: column;
+        gap: space(sm);
+
+        .cardTitle{
+            font-size: fs(md);
+            font-weight: fw(bold);
+            color: theme(text-color);
+        }
+
+        .cardDescription{
+            font-size: fs(sm);
+            color: theme(text-color);
+        }
+    }
+
+    &:hover{
+        @include card-hover();
+    }
+}

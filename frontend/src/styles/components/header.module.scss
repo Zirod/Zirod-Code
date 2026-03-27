@@ -1,5 +1,6 @@
 @use '../tokens/index' as *;
 @use '../theme/theme' as *;
+@use '../minxing/index' as *;
 
 .header{
     position: fixed;
@@ -17,11 +18,11 @@
     width: 60%;
     padding: space(sm) space(2xl);
     display: flex;
-    border-radius: 100px;
+    border-radius: radius(full);
     justify-content: space-between;
-    background-color: #ffffff42;
-    backdrop-filter: blur(50px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff42;;
+    box-shadow: theme(elevation-4);
+    backdrop-filter: blur(10px);
 
     .logo{
         
@@ -51,7 +52,7 @@
             transition: color 0.2s ease;
 
             &:hover {
-            color: #0070f3;
+                color: #0070f3;
             }
 
         }

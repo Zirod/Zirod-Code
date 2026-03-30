@@ -1,0 +1,36 @@
+$light-theme-colors : (
+    /* ------- Base color -------*/
+    primary : rgba(12, 117, 255, 0.815),
+    success : rgb(7, 206, 113),
+    info    : rgb(6, 225, 233),
+    danger  : rgb(206, 6, 66),
+
+    /* ------- Surface color -------*/
+    body-bg    : rgba(253, 253, 253, 0.747),
+    semi-transparent: rgba(11, 212, 179, 0.048),
+    hero-surface:rgba(0, 0, 0, 0.411),
+
+    /* ------- Text color -------*/
+    text-color : rgb(56, 56, 56),
+
+
+);
+
+
+$dark-theme-colors :(
+    /* ------- Base color -------*/
+    primary : rgba(12, 117, 255, 0.815),
+    success : rgb(7, 206, 113),
+    info    : rgb(6, 225, 233),
+    danger  : rgb(206, 6, 66),
+
+    /* ------- Surface color -------*/
+    body-bg    : rgba(46, 46, 46, 0.747),
+    semi-transparent: rgba(94, 95, 95, 0.301),
+
+
+    /* ------- Text color -------*/
+    text-color : rgb(255, 255, 255),
+
+
+);

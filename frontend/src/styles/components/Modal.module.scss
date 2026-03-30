@@ -1,0 +1,67 @@
+
+@use '../theme/theme.scss' as *;
+@use '../tokens/index.scss' as *;
+@use '../minxing/index.scss' as *;
+
+
+
+.modal {
+  position:fixed;
+  inset: 0;
+  display: none;
+  z-index: 9999;
+  background-color: theme(semi-transparent);
+  backdrop-filter: theme(blured-surface);
+
+
+  &.active {
+    display: block;
+  }
+}
+
+// overlay
+.modal_overlayy {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+
+}
+
+// content
+.modal_content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 10vh auto;
+  padding: space(2xl);
+  border-radius: radius(2xl);
+  background: theme(semi-transparent);
+  color: theme(text-color);
+
+  opacity: 1;
+  box-shadow: theme(elevation-4);
+   @include fade-scale-in(0.5s, 0.3s);
+}
+
+// bouton close
+.modal_close {
+  position: absolute;
+  background: none;
+  top: 10px;
+  right: 15px;
+  font-size: fs(xl);
+  border: none;
+  color: theme(text-color);
+  cursor: pointer;
+}
+
+// animations
+@keyframes fadeIn {
+  @include fade-in(0.3s);
+}
+
+@keyframes modalIn {
+  @include fade-scale-in(0.5s);
+}

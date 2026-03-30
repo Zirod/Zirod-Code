@@ -5,7 +5,7 @@ import "../styles/main.scss";
 
 export const metadata: Metadata = {
     title: "Zirod Code | Portforlio",
-    description: "Portfolio développeur Node.js / Next.js",
+    description: "Développeur full-stack, j’aide les entreprises à construire des applications web rapides, fiables et prêtes à passer à l’échelle.",
 };
 
 export default function RootLayout({ children, }: { children: React.ReactNode; }) {

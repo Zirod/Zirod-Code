@@ -1,15 +1,16 @@
 // Font sizes
 $font-sizes: (
-  xs: 0.75rem,
-  sm: 0.875rem, 
-  md: 1rem,
-  lg: 1.125rem,
-  xl: 1.25rem, 
-  2xl: 1.5rem, 
-  3xl: 1.875rem,
-  4xl: 2.25rem, 
-  5xl: 3rem
+  xs: clamp(0.7rem, 0.65rem + 0.2vw, 0.75rem),
+  sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem),
+  md: clamp(0.9rem, 0.85rem + 0.3vw, 1rem),
+  lg: clamp(1rem, 0.95rem + 0.4vw, 1.125rem),
+  xl: clamp(1.1rem, 1rem + 0.6vw, 1.25rem),
+  2xl: clamp(1.25rem, 1.1rem + 1vw, 1.5rem),
+  3xl: clamp(1.5rem, 1.3rem + 1.5vw, 1.875rem),
+  4xl: clamp(1.8rem, 1.5rem + 2vw, 2.25rem),
+  5xl: clamp(2.2rem, 1.8rem + 3vw, 3rem)
 );
+
 @function fs($key) {
   @return map-get($font-sizes, $key);
 }

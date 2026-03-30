@@ -5,6 +5,7 @@
 .button {
   @include flex;
   min-width: 130px;
+  font-size: fs(sm);
   max-width: fit-content;
   gap: space(sm);
   padding: space(sm) space(lg);

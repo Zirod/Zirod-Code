@@ -4,8 +4,7 @@
 
 .header{
     position: fixed;
-    top:0;right:0;left:0;
-    z-index: 999;
+    z-index: 1;
     padding-top: space(sm);
     width: 100%;
     height:auto;
@@ -14,15 +13,16 @@
     flex-direction: row;
 }
 
+
 .container{
     width: 60%;
     padding: space(sm) space(2xl);
     display: flex;
     border-radius: radius(full);
     justify-content: space-between;
-    background-color: #ffffff42;;
-    box-shadow: theme(elevation-4);
-    backdrop-filter: blur(10px);
+    background-color: #ffffff42;
+    box-shadow: theme(elevation-3);
+    backdrop-filter: theme(blured-surface);
 
     .logo{
         
@@ -46,13 +46,14 @@
             position: relative;
             padding: space(md);
             font-size: fs(md);
-            font-weight: fw(medium);
+            font-weight: fw(bold);
             text-decoration: none;
             color: theme(danger);
             transition: color 0.2s ease;
+            text-decoration: none;
 
             &:hover {
-                color: #0070f3;
+                color: #3a95fd;
             }
 
         }

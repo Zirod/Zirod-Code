@@ -1,6 +1,6 @@
-@use '../tokens/colors.scss' as *;
+@use '../tokens/index.scss' as *;
 @use '../theme/theme.scss' as *;
-@use '../minxing/index.scss' as *;
+@use '@/styles/minxing/index.scss' as *;
 
 
 
@@ -10,8 +10,8 @@
     width:100%;
     height: 100vh;
     background: transparent;
-    /*background-image: url('../../../public/1774434686.png');*/
     background-size: cover;
+    @include grid-auto(500px);
 
     &::before{
         content:"";
@@ -21,4 +21,40 @@
         backdrop-filter: blur(10px);
     }
     
+}
+
+.content{
+    position: relative;
+    z-index: 0;
+    padding: 2rem;
+    font-style: fs(2xl);
+    text-align: left;
+    padding : space(4xl);
+    color: theme(hero-text-color);
+    @include fade-in();
+
+    .title{
+        font-size: fs(5xl);
+        font-weight: fw(extrabold);
+        line-height: lh(tight);
+        letter-spacing: ls(tight);
+        margin-bottom: space(2xl);
+    }
+    .description{
+        font-size: fs(xl);
+        font-weight: fw(regular);
+        line-height: lh(relaxed);
+        letter-spacing: ls(normal);
+        margin-bottom: space(2xl);
+    }
+    
+}
+.image{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-radius: radius(md);
+    @include flex;
+    @include fade-scale-in;
 }
